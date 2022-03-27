@@ -1,0 +1,12 @@
+[programs.devnet]
+omenproject = "Bj6u3CtKV2Hga2yZpAxz2hkpAGwgAmweT2YyJx9z1sGf"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/rebeccaoshiobughie/.config/solana/id.json"
+
+[scripts]
+test = "node tests/omenproject.js"
