@@ -1,0 +1,107 @@
+{
+    "version": "0.0.0",
+    "name": "omenproject",
+    "instructions": [
+      {
+        "name": "initialize",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "systemProgram",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": []
+      },
+      {
+        "name": "addProject",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": false
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": true
+          }
+        ],
+        "args": [
+          {
+            "name": "projectLink",
+            "type": "string"
+          },
+          {
+            "name": "projectTitle",
+            "type": "string"
+          },
+          {
+            "name": "projectType",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "accounts": [
+      {
+        "name": "BaseAccount",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "totalProjects",
+              "type": "u64"
+            },
+            {
+              "name": "projectList",
+              "type": {
+                "vec": {
+                  "defined": "ItemStruct"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "ItemStruct",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "projectLink",
+              "type": "string"
+            },
+            {
+              "name": "projectTitle",
+              "type": "string"
+            },
+            {
+              "name": "projectType",
+              "type": "string"
+            },
+            {
+              "name": "userAddress",
+              "type": "publicKey"
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "address": "Bj6u3CtKV2Hga2yZpAxz2hkpAGwgAmweT2YyJx9z1sGf"
+    }
+  }
