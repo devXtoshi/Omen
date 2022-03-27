@@ -385,7 +385,7 @@ const Home: NextPage = () => {
                   </ul>
                 </div>
               ) : (
-                <div className="mt-5 space-x-7 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+                <div className="mt-5 text-center space-x-7 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                   <a
                      className="text-om-400 hover:text-om-200 bg-om-200 hover:bg-om-400 rounded-md px-5 py-3 cta-button submit-gif-button"
                     data-wow-delay="300ms"
