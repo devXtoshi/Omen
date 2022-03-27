@@ -330,7 +330,7 @@ const Home: NextPage = () => {
                 <span className="block  xl:inline">Directory</span>
               </h1>
               <p className="text-center mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                The next generation gaming ecosystem for IGOs and NFT
+                Upload Harry Potter Gifs to the solana blockchain
               </p>
 
               {publicKey ? (
@@ -387,7 +387,7 @@ const Home: NextPage = () => {
               ) : (
                 <div className="mt-5 text-center space-x-7 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                   <a
-                     className="text-om-400 hover:text-om-200 bg-om-200 hover:bg-om-400 rounded-md px-5 py-3 cta-button submit-gif-button"
+                    className="text-om-400 hover:text-om-200 bg-om-200 hover:bg-om-400 rounded-md px-5 py-3 cta-button submit-gif-button"
                     data-wow-delay="300ms"
                     data-wow-duration="2500ms"
                     href="#"
